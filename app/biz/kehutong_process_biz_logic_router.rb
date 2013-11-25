@@ -7,14 +7,15 @@ class KehutongProcessBizLogicRouter
   def initialize
     @states = []
   end
+
   def self.router
-    return @@router ||= KehutongProcessBizLogicRouter.new
+    @@router ||= KehutongProcessBizLogicRouter.new
   end
 
   def draw &block
     @states =[]
     self.instance_eval &block
-    #p @states
+    p @states
     @current_state = @states[0]
   end
 

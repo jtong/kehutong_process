@@ -6,7 +6,7 @@ describe ProcessController do
       get :handle
       expect(response).to be_success
       expect(response.status).to eq(200)
-      expect(response.body).to eq "I am running"
+      expect(response.body).to eq "注册成功"
     end
 
   end
