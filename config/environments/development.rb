@@ -28,4 +28,5 @@ KehutongProcess::Application.configure do
   config.assets.debug = true
 
   config.autoload_paths += %W(#{config.root}/biz)
+  config.autoload_paths += %W(#{config.root}/biz_router)
 end
