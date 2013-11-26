@@ -8,8 +8,11 @@ class Handler
     @routes = routes
   end
 
+  def next(node)
+    @routes= {then:node}
+  end
+
   def handle input
-    puts @name
     @handling.call(input)
     return @routes[:then].handle(input)
   end

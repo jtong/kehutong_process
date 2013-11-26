@@ -13,6 +13,7 @@ class KehutongProcessBizLogicRouter
   end
 
   def handle input
+
     return @states[0].handle input
   end
 
